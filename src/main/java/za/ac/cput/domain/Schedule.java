@@ -1,7 +1,10 @@
-/* Schedule.java  Schedule model class Author Angelo Adams (230450431) Date: 04 March 2026 */
+/* Schedule.java  
+Schedule model class 
+Author Angelo Adams (230450431) 
+Date: 04 March 2026 */
 package za.ac.cput.domain;
 
-
+//Imports
 import java.util.Objects;
 
 public class Schedule {
@@ -11,7 +14,7 @@ public class Schedule {
     private int vehicleId;
     private String status;
 
-//contructor
+//default contructor
     public Schedule(){
         
     }
@@ -29,7 +32,7 @@ public class Schedule {
     public int getVehicleId() { return vehicleId; }
     public String getStatus() { return status; }
 
-    // Builder
+    // Builder patterns
     public static class Builder {
         private int scheduleId;
         private int instructorId;
