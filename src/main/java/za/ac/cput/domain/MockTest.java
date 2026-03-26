@@ -6,13 +6,12 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class MockTest {
-
     private int testId;
     private LocalDate dateTaken;
     private int score;
     private boolean passed;
 
-
+//contructor
     private MockTest(Builder builder) {
         this.testId = builder.testId;
         this.dateTaken = builder.dateTaken;
@@ -26,7 +25,7 @@ public class MockTest {
     public int getScore() { return score; }
     public boolean isPassed() { return passed; }
 
-
+//builder
     public static class Builder {
         private int testId;
         private LocalDate dateTaken;

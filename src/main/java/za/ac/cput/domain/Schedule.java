@@ -10,7 +10,7 @@ public class Schedule {
     private int vehicleId;
     private String status;
 
-
+//contructor
     private Schedule(Builder builder) {
         this.scheduleId = builder.scheduleId;
         this.instructorId = builder.instructorId;
