@@ -1,3 +1,4 @@
+/* Schedule.java  Schedule model class Author Angelo Adams (230450431) Date: 04 March 2026 */
 package za.ac.cput.domain;
 
 
@@ -11,6 +12,10 @@ public class Schedule {
     private String status;
 
 //contructor
+    public Schedule(){
+        
+    }
+        //constructor arg
     private Schedule(Builder builder) {
         this.scheduleId = builder.scheduleId;
         this.instructorId = builder.instructorId;
@@ -31,6 +36,7 @@ public class Schedule {
         private int vehicleId;
         private String status;
 
+        //setters
         public Builder setScheduleId(int scheduleId) {
             this.scheduleId = scheduleId;
             return this;
