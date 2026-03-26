@@ -20,16 +20,7 @@ public class Admin {
     public Admin() {
 
     }
-    /*
-     * Parameterized constructor to initialize all fields
-     */
-    public Admin(int adminId, String department, int accessLevel, int userId) {
-        this.adminId = adminId;
-        this.department = department;
-        this.accessLevel = accessLevel;
-        this.userId = userId;
-    }
-
+  
     /**
      * Constructor that uses the Builder object to initialize fields
      */
