@@ -42,6 +42,6 @@ public class AdminFactoryTest {
                 2,         // accessLevel
                 "U001"     // userId
         );
-        assertNull(admin);  // Verify admin was created
+        assertNull(admin);  // Verify admin was NOT created (empty department should fail)
     }
 }
