@@ -9,7 +9,7 @@ import za.ac.cput.domain.Schedule;
 import za.ac.cput.util.Helper;
 
 public class ScheduleFactory {
-
+// Validate scheduleId , instructorId, vehicleId & status (must not be null or empty)
     public static Schedule createSchedule(String scheduleId, String instructorId, String vehicleId, String status ){
 
         if (Helper.isNullOrEmpty(scheduleId)) {
