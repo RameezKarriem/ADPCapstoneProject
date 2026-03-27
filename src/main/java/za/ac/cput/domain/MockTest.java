@@ -57,7 +57,10 @@ public class MockTest {
             this.passed = passed;
             return this;
         }
-
+/**
+         * Copies values from an existing MockTest object to the Builder.
+         * This method is used for creating modified copies of existing MockTest types.
+        */
         public Builder copy(MockTest mockTest) {
             this.testId = mockTest.testId;
             this.dateTaken = mockTest.dateTaken;
