@@ -1,3 +1,7 @@
+/* ScheduleFactory.java  
+ScheduleFactory model class 
+Author Angelo Adams (230450431) 
+Date: 04 March 2026 */
 package za.ac.cput.factory;
 
 import za.ac.cput.domain.MockTest;
