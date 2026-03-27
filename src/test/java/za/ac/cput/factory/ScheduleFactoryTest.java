@@ -1,4 +1,12 @@
+/*
+ * ScheduleFactoryTest.java
+ * ScheduleFactoryTest class
+ * Author: Angelo Adams(230450431)
+ * Date: 26 March 2026
+*/
+
 package za.ac.cput.factory;
+
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -25,7 +33,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
             Schedule schedule = ScheduleFactory.createSchedule(
                     "AB01",                // scheduleId
                     "C001", // instructorId
-                    "TC001",                     // vehicle
+                    "TC001",                     // vehicleId
                     "Accepted"             // status
             );
             assertNotNull(schedule);  // Verify schedule was created
@@ -38,7 +46,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
             Schedule schedule = ScheduleFactory.createSchedule(
                     "",                // scheduleId (empty)
                     "C001", // instructorId
-                    "TC001",                     // vehicle
+                    "TC001",                     // vehicleId
                     "Accepted"             // status
             );
             assertNull(schedule);  // Verify schedule was NOT created
