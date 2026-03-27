@@ -68,7 +68,12 @@ public class Schedule {
             this.status = schedule.status;
             return this;
         }
-
+ /**
+         * Builds and returns a new Schedule object.
+         * This method validates  and creates the immutable Schedule
+         
+         * @return A new Schedule object with the properties configured
+         */
         public Schedule build() {
             return new Schedule(this);
         }
