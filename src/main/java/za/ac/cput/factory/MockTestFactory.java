@@ -15,6 +15,8 @@ import java.time.LocalDate;
  
  // Responsible for creating MockTest objects with validation.
 public class MockTestFactory {
+
+ // Validate testId , dateTaken, score & pass (must not be null or empty)
     public static MockTest createMockTest(String testId, LocalDate dateTaken, int score, boolean pass){
         if (Helper.isNullOrEmpty(testId)) {
             return null;
